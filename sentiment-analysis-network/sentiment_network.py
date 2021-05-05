@@ -203,6 +203,7 @@ class SentimentNetwork:
             # Output error
             # Output layer error is the difference between desired target and actual output.
             layer_2_error = layer_2 - self.get_target_for_label(label)
+            import pdb; pdb.set_trace()
             layer_2_delta = layer_2_error * \
                 self.sigmoid_output_2_derivative(layer_2)
 
