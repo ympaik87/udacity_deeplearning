@@ -53,7 +53,6 @@ for e in range(epochs):
 
         # TODO: Update the change in weights
         del_w_hidden_output += output_error_term * hidden_output
-        import pdb; pdb.set_trace()
         del_w_input_hidden += hidden_error_term * x[:, None]
 
     # TODO: Update weights
